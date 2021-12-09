@@ -1,5 +1,3 @@
-import numpy as np
-
 with open("input.txt") as f:
     instructions_raw = f.read().split(",")
 
