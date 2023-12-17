@@ -11,7 +11,7 @@ def extract_digits(line):
 
 
 def get_calibration_values(input):
-    calibration_values = [extract_digits(l) for l in input]
+    calibration_values = [extract_digits(line) for line in input]
     return calibration_values
 
 
@@ -48,6 +48,6 @@ def replace_spelled_out_digits(line):
     return line
 
 
-preprocessed_input_part_2 = [replace_spelled_out_digits(l) for l in parsed_input]
+preprocessed_input_part_2 = [replace_spelled_out_digits(line) for line in parsed_input]
 
 print(f"Solution part 2 {sum(get_calibration_values(preprocessed_input_part_2))}")
